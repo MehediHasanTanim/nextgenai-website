@@ -1,0 +1,73 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--bg:#f6f4ff;--card:#fff;--line:#e6e1fb;--ink:#1b1536;--mut:#7a7399;--acc:#6d4aff;--soft:#ece7ff;--ok:#16a34a;--warn:#f59e0b;--bad:#e11d48}
+.ring{width:84px;height:84px;border-radius:50%;background:conic-gradient(var(--acc) 0 68%,var(--soft) 0);display:grid;place-items:center}
+.ring b{width:64px;height:64px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:18px}
+.bub{max-width:82%;padding:12px 14px;border-radius:18px;font-size:14.5px;line-height:1.6}
+.me{align-self:flex-end;background:var(--acc);color:#fff;border-bottom-right-radius:6px}
+.ai{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:6px}
+.src{display:inline-flex;gap:6px;align-items:center;margin-top:8px;padding:6px 10px;border-radius:10px;background:var(--soft);color:var(--acc);font-size:11.5px;font-weight:600}
+.opt{padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:#fff;font-size:15px;display:flex;gap:12px;align-items:center}
+.opt i{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700;color:var(--mut)}
+.opt.sel{border-color:var(--acc);background:var(--soft)}.opt.sel i{background:var(--acc);border-color:var(--acc);color:#fff}
+.sub{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:22px}
+.col-b{display:flex;align-items:flex-end;gap:7px;height:110px}.col-b i{flex:1;border-radius:7px 7px 3px 3px;background:var(--acc)}
+</style></head><body>
+
+<!-- 1 Home -->
+<section class="screen" id="s1"><div class="top col gap16">
+  <div class="row"><div class="grow"><div class="sm mut">শুভ সকাল</div><div class="h1">রিয়া, আজ কী শিখবে?</div></div><span class="pill">🔥 ৭ দিন</span></div>
+  <div class="card row gap16"><div class="ring"><b>৬৮%</b></div><div class="grow col gap8"><div class="h2">আজকের লক্ষ্য</div><div class="sm mut">৩০ মিনিটের মধ্যে ২০ মিনিট পড়া হয়েছে</div><div class="bar"><i style="width:68%"></i></div></div></div>
+  <div class="card col gap10" style="background:var(--acc);border:0;color:#fff"><div class="xs" style="opacity:.8">চালিয়ে যাও</div><div class="h2">পদার্থবিজ্ঞান · অধ্যায় ৩</div><div class="sm" style="opacity:.9">গতি ও নিউটনের সূত্র</div><div style="margin-top:6px;background:#fff;color:var(--acc);border-radius:12px;padding:11px;text-align:center;font-weight:700">পড়া শুরু করো</div></div>
+  <div><div class="h2" style="margin-bottom:10px">দুর্বল বিষয়</div><div class="row gap8" style="flex-wrap:wrap"><span class="chip">তরঙ্গ ও শব্দ</span><span class="chip">রাসায়নিক বন্ধন</span><span class="chip">কোষ বিভাজন</span></div></div>
+  <div class="card row gap12"><div class="sub" style="background:var(--soft)">✨</div><div class="grow"><div class="h2" style="font-size:15px">এআই সুপারিশ</div><div class="sm mut">“তরঙ্গ ও শব্দ” থেকে ৫টি অনুশীলন প্রশ্ন করো</div></div></div>
+</div><div class="grow"></div>
+<div class="nav"><div class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>হোম</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/></svg>শিখি</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg>টিউটর</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>অগ্রগতি</div></div>
+</section>
+
+<!-- 2 Tutor chat -->
+<section class="screen" id="s2"><div class="top row gap12" style="padding-bottom:12px;border-bottom:1px solid var(--line);background:#fff"><div class="grow"><div class="h2">এআই টিউটর</div><div class="xs mut">পদার্থবিজ্ঞান · অধ্যায় ৩</div></div><span class="pill">NCTB ভিত্তিক</span></div>
+<div class="grow col gap12" style="padding:18px 18px 8px">
+  <div class="bub me">নিউটনের দ্বিতীয় সূত্র সহজ করে বুঝিয়ে দাও</div>
+  <div class="bub ai"><b>নিউটনের দ্বিতীয় সূত্র</b><br>কোনো বস্তুর ওপর বল প্রয়োগ করলে বস্তুটির ত্বরণ হয়। ত্বরণ বলের সমানুপাতিক এবং ভরের ব্যস্তানুপাতিক।<div style="margin:10px 0;padding:10px;border-radius:12px;background:var(--soft);text-align:center;font-weight:700;font-size:20px;color:var(--acc)">F = m × a</div>যেমন: একই জোরে ধাক্কা দিলে খালি ট্রলি দ্রুত চলে, ভরা ট্রলি ধীরে।<br><span class="src">📖 বিজ্ঞান, নবম–দশম · অধ্যায় ৩ · পৃষ্ঠা ৪২</span></div>
+  <div class="bub me">একটা অংক দেখাও</div>
+  <div class="bub ai">ভর ২ কেজি, বল ১০ N হলে ত্বরণ কত?<br><b>a = F ÷ m = ১০ ÷ ২ = ৫ m/s²</b></div>
+</div>
+<div class="pad row gap8" style="flex-wrap:wrap;padding-bottom:10px"><span class="chip">আরও সহজে</span><span class="chip">উদাহরণ দাও</span><span class="chip">কুইজ নাও</span><span class="chip">সূত্র দেখাও</span></div>
+<div class="row gap10" style="padding:0 18px 34px"><div class="grow row" style="height:50px;border-radius:25px;border:1.5px solid var(--line);background:#fff;padding:0 18px;color:var(--mut);font-size:14px">প্রশ্ন লেখো…</div><div style="width:50px;height:50px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:20px">📷</div><div style="width:50px;height:50px;border-radius:50%;background:var(--acc);display:grid;place-items:center;color:#fff;font-size:20px">➤</div></div>
+</section>
+
+<!-- 3 Learn -->
+<section class="screen" id="s3"><div class="top col gap16"><div class="h1">শিখি</div><div class="sm mut">বিজ্ঞান · নবম–দশম শ্রেণি</div>
+  <div class="card col gap12"><div class="row gap12"><div class="sub" style="background:#e0f2fe">⚡</div><div class="grow"><div class="h2">পদার্থবিজ্ঞান</div><div class="xs mut">১২ অধ্যায় · ৪টি সম্পন্ন</div></div><b style="color:var(--acc)">৪২%</b></div><div class="bar"><i style="width:42%"></i></div></div>
+  <div class="card col gap12"><div class="row gap12"><div class="sub" style="background:#fef3c7">🧪</div><div class="grow"><div class="h2">রসায়ন</div><div class="xs mut">১০ অধ্যায় · ২টি সম্পন্ন</div></div><b style="color:var(--acc)">২৫%</b></div><div class="bar"><i style="width:25%"></i></div></div>
+  <div class="card col gap12"><div class="row gap12"><div class="sub" style="background:#dcfce7">🌿</div><div class="grow"><div class="h2">জীববিজ্ঞান</div><div class="xs mut">১১ অধ্যায় · ৫টি সম্পন্ন</div></div><b style="color:var(--acc)">৫৫%</b></div><div class="bar"><i style="width:55%"></i></div></div>
+  <div class="card col gap10"><div class="h2">অধ্যায় ৩ · গতি</div><div class="row gap8" style="flex-wrap:wrap"><span class="pill">শিখি</span><span class="pill">অনুশীলন</span><span class="pill">কুইজ</span><span class="pill">অগ্রগতি</span></div></div>
+</div></section>
+
+<!-- 4 Quiz -->
+<section class="screen" id="s4"><div class="top col gap16"><div class="row"><div class="grow h2">কুইজ · গতি</div><span class="pill">⏱ ০৪:১২</span></div><div class="bar"><i style="width:40%"></i></div><div class="sm mut">প্রশ্ন ৪ / ১০</div>
+  <div class="h1" style="font-size:21px;line-height:1.55">২ কেজি ভরের একটি বস্তুর ওপর ১০ N বল প্রয়োগ করলে এর ত্বরণ কত হবে?</div>
+  <div class="col gap10"><div class="opt"><i>ক</i>২ m/s²</div><div class="opt sel"><i>খ</i>৫ m/s²</div><div class="opt"><i>গ</i>১০ m/s²</div><div class="opt"><i>ঘ</i>২০ m/s²</div></div>
+</div><div class="grow"></div><div class="pad" style="padding-bottom:40px"><div class="btn">পরবর্তী প্রশ্ন</div></div></section>
+
+<!-- 5 Result -->
+<section class="screen" id="s5"><div class="top col gap16" style="align-items:center;text-align:center"><div class="h2" style="margin-top:6px">কুইজ সম্পন্ন!</div>
+  <div class="ring" style="width:140px;height:140px;background:conic-gradient(var(--acc) 0 80%,var(--soft) 0)"><b style="width:112px;height:112px;font-size:34px;font-weight:700">৮/১০</b></div>
+  <div class="row gap10" style="width:100%"><div class="card grow"><div class="h2">৮০%</div><div class="xs mut">নির্ভুলতা</div></div><div class="card grow"><div class="h2">৬ মি.</div><div class="xs mut">সময়</div></div></div>
+  <div class="card col gap8" style="width:100%;text-align:left"><div class="h2" style="font-size:15px;color:var(--ok)">শক্তিশালী</div><div class="sm">গতি, ত্বরণ, নিউটনের প্রথম সূত্র</div></div>
+  <div class="card col gap8" style="width:100%;text-align:left"><div class="h2" style="font-size:15px;color:var(--warn)">আরও অনুশীলন দরকার</div><div class="sm">ঘর্ষণ বল, ভরবেগ</div></div>
+</div><div class="grow"></div><div class="pad col gap10" style="padding-bottom:40px"><div class="btn">দুর্বল বিষয় অনুশীলন করো</div><div class="btn alt">ভুলগুলো দেখো</div></div></section>
+
+<!-- 6 Progress -->
+<section class="screen" id="s6"><div class="top col gap16"><div class="h1">অগ্রগতি</div>
+  <div class="row gap10"><div class="card grow"><div class="h2">১২ ঘ.</div><div class="xs mut">এ সপ্তাহে পড়া</div></div><div class="card grow"><div class="h2">১৮৪</div><div class="xs mut">সমাধান করা প্রশ্ন</div></div></div>
+  <div class="card col gap12"><div class="row"><div class="h2 grow">সাপ্তাহিক পড়া</div><span class="xs mut">মিনিট</span></div><div class="col-b"><i style="height:45%"></i><i style="height:70%"></i><i style="height:35%"></i><i style="height:90%"></i><i style="height:60%"></i><i style="height:100%"></i><i style="height:55%;opacity:.45"></i></div><div class="row xs mut" style="justify-content:space-between"><span>শনি</span><span>রবি</span><span>সোম</span><span>মঙ্গল</span><span>বুধ</span><span>বৃহঃ</span><span>শুক্র</span></div></div>
+  <div class="card col gap12"><div class="h2">বিষয়ভিত্তিক দক্ষতা</div>
+    <div class="col gap8"><div class="row sm"><span class="grow">গতি ও বল</span><b>৮৫%</b></div><div class="bar"><i style="width:85%"></i></div></div>
+    <div class="col gap8"><div class="row sm"><span class="grow">তাপ ও তাপমাত্রা</span><b>৬২%</b></div><div class="bar"><i style="width:62%"></i></div></div>
+    <div class="col gap8"><div class="row sm"><span class="grow">তরঙ্গ ও শব্দ</span><b style="color:var(--bad)">৩৮%</b></div><div class="bar"><i style="width:38%;background:var(--bad)"></i></div></div></div>
+</div></section>
+</body></html>

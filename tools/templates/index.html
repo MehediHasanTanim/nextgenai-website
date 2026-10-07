@@ -1,0 +1,131 @@
+<!--@HEAD-->
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!--@HEADER-->
+
+<main id="main">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow reveal">AI-driven tech venture · Bangladesh</p>
+    <h1 class="reveal">AI products built for the way <span class="grad">Bangladesh</span> lives and works.</h1>
+    <p class="lead reveal">We design and ship Bangla-first, offline-first apps that put intelligence to work for shopkeepers, families, students, doctors and elders — without giving up their privacy.</p>
+    <div class="hero__cta reveal">
+      <a class="btn" href="#work">Explore our products</a>
+      <a class="btn btn--ghost" href="#contact">Work with us</a>
+    </div>
+    <p class="bn reveal" lang="bn">প্রযুক্তি হোক সবার জন্য, সবার ভাষায়।</p>
+  </div>
+<!--@SHOWCASE-->
+</section>
+
+<section class="stats wrap" aria-label="At a glance">
+  <div><strong>{{COUNT}}</strong><span>products in the studio</span></div>
+  <div><strong>{{DOMAINS}}</strong><span>domains: finance, health, education, voice</span></div>
+  <div><strong>Bangla</strong><span>first, in every product</span></div>
+  <div><strong>Offline</strong><span>first, private by design</span></div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2>What we're building</h2>
+      <p class="sub">{{COUNT_WORD}} products across {{DOMAINS_WORD}} domains. Each one starts from a real problem we see around us — select one to see what it does and how it looks.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter products">
+<!--@FILTERS-->
+    </div>
+
+    <div class="grid" id="grid">
+<!--@CARDS-->
+    </div>
+    <p class="note reveal">IELTS® is a registered trademark of its respective owners. BandBoost is not affiliated with, endorsed by or connected to the British Council, IDP: IELTS Australia or Cambridge University Press &amp; Assessment.</p>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section class="section section--alt" id="principles">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">How we build</p>
+      <h2>Four principles behind every product</h2>
+    </div>
+    <div class="cols">
+      <div class="pr reveal"><span class="pr__n">01</span><h3>Bangla first</h3><p>Not translated afterwards. Language, number formats, local payment methods and everyday phrasing are designed in from day one.</p></div>
+      <div class="pr reveal"><span class="pr__n">02</span><h3>Offline first</h3><p>Connectivity in Bangladesh varies. Our apps work where you are, and sync when they can — the phone is the source of truth.</p></div>
+      <div class="pr reveal"><span class="pr__n">03</span><h3>Private by design</h3><p>Health and money are personal. Local encrypted storage, no mandatory accounts, and only encrypted backups ever leave the device.</p></div>
+      <div class="pr reveal"><span class="pr__n">04</span><h3>AI that assists</h3><p>AI drafts, explains and answers from your own data. A person confirms before anything is saved, prescribed or decided.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="section" id="stack">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Capabilities</p>
+      <h2>The stack we ship with</h2>
+      <p class="sub">Clean, feature-first architecture, typed end to end, tested and generated where it makes sense.</p>
+    </div>
+    <div class="stack reveal">
+      <div><h3>Mobile &amp; web</h3><p>Flutter · Dart · Riverpod · GoRouter · Next.js · TypeScript</p></div>
+      <div><h3>Backend &amp; data</h3><p>NestJS · Prisma · PostgreSQL · pgvector · Redis · S3-compatible storage</p></div>
+      <div><h3>On-device</h3><p>Drift · SQLite · Secure storage · Local notifications · Encrypted backup</p></div>
+      <div><h3>AI &amp; speech</h3><p>LLM assistants · Retrieval-augmented generation · Speech recognition &amp; pronunciation scoring</p></div>
+      <div><h3>Quality &amp; delivery</h3><p>Docker · CI · OpenAPI contracts · Unit &amp; integration tests · Monorepos (pnpm, Melos)</p></div>
+      <div><h3>Localisation</h3><p>Bangla + English · Bangladeshi payment rails · Culturally-aware UX</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section--alt" id="process">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Process</p>
+      <h2>From idea to the app store</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><b>Discover</b><span>Talk to real users, map the workflow, define what “done” means.</span></li>
+      <li class="reveal"><b>Design</b><span>Product requirements, UX flows and a technical design before a line of production code.</span></li>
+      <li class="reveal"><b>Build</b><span>Phased delivery on a clean architecture, with tests and CI from the first sprint.</span></li>
+      <li class="reveal"><b>Ship &amp; grow</b><span>Store-ready releases, privacy policy, feedback loops and steady iteration.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something useful.</h2>
+      <p class="sub">Have a product idea, a partnership in mind, or want an early look at what we're building? Tell us a little and we'll reply — or write to us directly at <a class="inline" href="mailto:nextgenai1983@gmail.com">nextgenai1983@gmail.com</a>.</p>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>How can we help?<textarea name="msg" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo" href="#top"><span>nextgen<b>ai</b></span></a>
+    <p>© <span id="year">2026</span> nextgenai. Made in Bangladesh. · <a class="foot__mail" href="mailto:nextgenai1983@gmail.com">nextgenai1983@gmail.com</a></p>
+    <a href="#top" class="foot__up">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

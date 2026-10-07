@@ -1,0 +1,47 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--bg:#f3f8ff;--card:#fff;--line:#d9e5f5;--ink:#183153;--mut:#5b7091;--acc:#175cd3;--soft:#eaf3ff;--navy:#102a56;--gold:#f6b73c;--ok:#1f9d63}
+.tile{border-radius:24px;background:#fff;border:2px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:18px;text-align:center}
+.tile span{font-size:42px;line-height:1}
+.task{display:flex;gap:14px;align-items:center;padding:16px;border-radius:20px;background:#fff;border:1px solid var(--line)}
+.task .n{width:40px;height:40px;border-radius:50%;background:var(--soft);color:var(--acc);display:grid;place-items:center;font-weight:800}
+.task.done .n{background:var(--ok);color:#fff}
+.step{flex:1;border-radius:26px;padding:22px 14px;text-align:center;display:flex;flex-direction:column;gap:10px;align-items:center;font-weight:800;font-size:20px}
+.step span{font-size:54px;line-height:1}
+.step i{font-style:normal;font-size:13px;font-weight:700;opacity:.75}
+.note{padding:14px 16px;border-radius:18px;background:#fff;border:1px solid var(--line);font-size:14.5px;line-height:1.6}
+.col-b{display:flex;align-items:flex-end;gap:8px;height:96px}.col-b i{flex:1;border-radius:8px 8px 3px 3px;background:var(--acc)}
+</style></head><body>
+
+<!-- 1 Today -->
+<section class="screen" id="s1"><div class="top col gap16">
+  <div class="row"><div class="grow"><div class="sm mut">শুভ সকাল</div><div class="h1" style="font-size:26px">আজকের ছোট পরিকল্পনা</div></div><span class="pill">🔒 Parent Mode</span></div>
+  <div class="card row gap12" style="background:var(--acc);border:0;color:#fff"><div style="font-size:40px">🌤️</div><div class="grow"><div style="font-weight:800;font-size:18px">৩টি ছোট কাজ</div><div class="sm" style="opacity:.9">শিশুর আগ্রহ ও আরামের সাথে মানানসই</div></div></div>
+  <div class="task done"><div class="n">✓</div><div class="grow"><b>গাইডেড অ্যাক্টিভিটি</b><div class="xs mut">ছবি দেখে চিনি · ৫ মিনিট</div></div></div>
+  <div class="task"><div class="n">২</div><div class="grow"><b>কমিউনিকেশন বোর্ড</b><div class="xs mut">পরিচিত চাহিদা প্রকাশ</div></div></div>
+  <div class="task"><div class="n">৩</div><div class="grow"><b>আজকের রুটিন</b><div class="xs mut">প্রথমে–তারপর</div></div></div>
+  <div class="note"><b>পর্যবেক্ষণ লিখুন</b><br><span class="mut">আজকের ইতিবাচক বা কঠিন মুহূর্ত এক লাইনে নোট করুন।</span></div>
+</div><div class="grow"></div>
+<div class="nav"><div class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>আজ</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/></svg>শেখা</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7"/></svg>অগ্রগতি</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6z"/></svg>নিরাপত্তা</div></div>
+</section>
+
+<!-- 2 Communication board -->
+<section class="screen" id="s2" style="background:#fff"><div class="top col" style="gap:4px"><div class="row"><div class="grow h1" style="font-size:26px">কথা বলি</div><span class="pill">Child Mode</span></div><div class="sm mut">ছুঁয়ে দিলে বাংলা অডিও শোনা যাবে</div></div>
+<div class="pad" style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:14px;padding-top:6px"><div class="tile"><span>💧</span>পানি</div><div class="tile"><span>🍚</span>খাবার</div><div class="tile"><span>🚽</span>টয়লেট</div><div class="tile"><span>🧸</span>খেলা</div><div class="tile"><span>🛏️</span>ঘুম</div><div class="tile" style="background:var(--soft)"><span>🙋</span>সাহায্য</div></div>
+<div class="grow"></div><div class="pad" style="padding-bottom:40px"><div class="card row gap12" style="border-radius:22px"><div style="font-size:30px">🔊</div><div class="grow"><b>“আমি পানি খেতে চাই”</b></div></div></div></section>
+
+<!-- 3 First-Then -->
+<section class="screen" id="s3"><div class="top col" style="gap:4px"><div class="row"><div class="grow h1" style="font-size:26px">প্রথমে – তারপর</div><span class="pill">Child Mode</span></div><div class="sm mut">পরিবর্তন আগে থেকে বোঝার জন্য</div></div>
+<div class="pad row gap12" style="align-items:stretch;padding-top:10px"><div class="step" style="background:var(--soft);border:3px solid var(--acc)"><i>প্রথমে</i><span>🧼</span>হাত ধোওয়া</div><div style="align-self:center;font-size:30px;color:var(--acc);font-weight:800">→</div><div class="step" style="background:#fff7e0;border:3px solid var(--gold)"><i>তারপর</i><span>🎈</span>খেলা</div></div>
+<div class="grow col" style="align-items:center;justify-content:center;gap:14px"><div style="width:190px;height:190px;border-radius:50%;background:conic-gradient(var(--acc) 0 62%,var(--soft) 0);display:grid;place-items:center"><div style="width:150px;height:150px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:42px;font-weight:800;color:var(--navy)">০২:১৪</div></div><div class="mut" style="font-size:16px;font-weight:600">আর একটু বাকি</div></div>
+<div class="pad" style="padding-bottom:40px"><div class="btn" style="height:60px;font-size:19px">হয়ে গেছে ✓</div></div></section>
+
+<!-- 4 Progress -->
+<section class="screen" id="s4"><div class="top col gap16"><div class="row"><div class="grow h1" style="font-size:26px">অগ্রগতি</div><span class="pill">🔒 Parent Mode</span></div>
+  <div class="card col gap12"><div class="row"><div class="h2 grow">এই সপ্তাহের সারাংশ</div><span class="xs mut">৭ দিন</span></div><div class="col-b"><i style="height:40%"></i><i style="height:60%"></i><i style="height:50%"></i><i style="height:80%"></i><i style="height:65%"></i><i style="height:95%"></i><i style="height:55%;opacity:.45"></i></div><div class="row xs mut" style="justify-content:space-between"><span>শনি</span><span>রবি</span><span>সোম</span><span>মঙ্গল</span><span>বুধ</span><span>বৃহঃ</span><span>শুক্র</span></div></div>
+  <div class="row gap10"><div class="card grow"><div class="h2" style="color:var(--ok)">১২</div><div class="xs mut">সম্পন্ন কাজ</div></div><div class="card grow"><div class="h2">৫</div><div class="xs mut">নতুন কার্ড</div></div></div>
+  <div class="card col gap10"><div class="h2" style="font-size:15px">মুহূর্তের নোট</div><div class="note" style="border-color:#bfe6d2;background:#effaf4">😊 আজ নিজে থেকে “পানি” কার্ডটি বেছে নিয়েছে।</div><div class="note" style="border-color:#fde6b0;background:#fff9ea">⏳ রুটিন বদলের সময় একটু সময় লেগেছে।</div></div>
+</div></section>
+</body></html>

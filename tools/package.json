@@ -1,0 +1,14 @@
+{
+  "name": "nextgenai-site-tools",
+  "private": true,
+  "type": "module",
+  "description": "Dev-only tooling: screenshot capture, marketing-image rendering and the static page generator.",
+  "scripts": {
+    "capture": "node capture.mjs",
+    "marketing": "node marketing.mjs",
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

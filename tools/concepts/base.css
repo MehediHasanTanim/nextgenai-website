@@ -1,0 +1,28 @@
+/* Shared styles for concept-screen renders (390x844). Each screen sets its own --vars. */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:'Noto Sans Bengali','Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--ink)}
+.screen{display:none;width:390px;height:844px;position:relative;flex-direction:column;overflow:hidden;background:var(--bg)}
+.screen:target{display:flex}
+.top{padding:62px 22px 14px}
+.row{display:flex;align-items:center}
+.col{display:flex;flex-direction:column}
+.grow{flex:1}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
+.h1{font-size:25px;font-weight:700;line-height:1.3}
+.h2{font-size:17px;font-weight:700}
+.mut{color:var(--mut)}
+.sm{font-size:13px}
+.xs{font-size:11.5px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:99px;font-size:12.5px;font-weight:600;background:var(--soft);color:var(--acc)}
+.btn{display:flex;align-items:center;justify-content:center;height:52px;border-radius:16px;background:var(--acc);color:#fff;font-weight:700;font-size:16px}
+.btn.alt{background:var(--card);color:var(--acc);border:1.5px solid var(--acc)}
+.nav{height:84px;border-top:1px solid var(--line);background:var(--card);display:flex;padding:10px 8px 0}
+.nav div{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;color:var(--mut)}
+.nav div.on{color:var(--acc);font-weight:700}
+.nav svg{width:24px;height:24px}
+.bar{height:8px;border-radius:99px;background:var(--soft);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:var(--acc)}
+.gap8{gap:8px}.gap10{gap:10px}.gap12{gap:12px}.gap16{gap:16px}
+.pad{padding:0 22px}
+.chip{padding:8px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card);font-size:13px;font-weight:600}
