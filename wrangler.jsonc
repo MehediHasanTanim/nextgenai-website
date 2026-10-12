@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static-assets deployment for the nextgenai site.
+  // Build the site files first with:  bash tools/package-site.sh   (creates ./dist)
+  // Then deploy with:                 npx wrangler deploy
+  "name": "nextgenai",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

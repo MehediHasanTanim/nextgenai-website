@@ -90,7 +90,7 @@ function footer(base) {
 
 const head = (title, desc, base, ogImage, { pagePath = '', extra = '', noindex = false } = {}) => {
   desc = trimDesc(desc);
-  const url = SITE_URL ? `${SITE_URL}/${pagePath}` : '';
+  const url = SITE_URL ? `${SITE_URL}/${pagePath.replace(/\.html$/, '')}` : '';
   const img = SITE_URL ? absUrl(ogImage) : '';
   return `<!doctype html>
 <html lang="en">
@@ -197,7 +197,7 @@ function productPage(p, i) {
   const crumbs = SITE_URL ? jsonLd({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL + '/' },
     { '@type': 'ListItem', position: 2, name: 'Portfolio', item: SITE_URL + '/#work' },
-    { '@type': 'ListItem', position: 3, name: p.name, item: `${SITE_URL}/products/${p.slug}.html` } ] }) : '';
+    { '@type': 'ListItem', position: 3, name: p.name, item: `${SITE_URL}/products/${p.slug}` } ] }) : '';
   return `${head(title, p.summary, '../', `assets/marketing/${p.slug}-hero.jpg`, { pagePath: `products/${p.slug}.html`, extra: crumbs })}
 <body class="pd" style="--a:${p.accent}">
 <a class="skip" href="#main">Skip to content</a>
@@ -302,7 +302,7 @@ fs.writeFileSync(path.join(SITE, 'robots.txt'), `User-agent: *\nAllow: /\n${SITE
 const sitemapPath = path.join(SITE, 'sitemap.xml');
 if (SITE_URL) {
   const today = new Date().toISOString().slice(0, 10);
-  const urls = ['', ...products.map(p => `products/${p.slug}.html`)];
+  const urls = ['', ...products.map(p => `products/${p.slug}`)];
   fs.writeFileSync(sitemapPath, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${SITE_URL}/${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 } else if (fs.existsSync(sitemapPath)) fs.unlinkSync(sitemapPath);
 
