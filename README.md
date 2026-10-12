@@ -27,6 +27,18 @@ Once you know the live address, put it in `tools/site.json` (e.g. `{ "url": "htt
 (search engines and WhatsApp/Facebook need absolute URLs). Everything else (titles, descriptions, `robots.txt`, 404 page, touch icon,
 Organization/WebSite/Breadcrumb structured data) is already generated.
 
+## Deploying to Cloudflare (Workers static assets)
+
+Live at https://nextgenai.mobileapps-bd.workers.dev. To publish an update:
+
+```bash
+bash tools/package-site.sh     # rebuilds pages and refreshes ./dist
+npx wrangler deploy            # uploads ./dist to the "nextgenai" Worker (config: wrangler.jsonc)
+```
+
+First time on a machine: `npx wrangler login`. Cloudflare serves `/products/x.html` at `/products/x` (a redirect),
+so canonical links and the sitemap use the extensionless form.
+
 ## Run locally
 
 ```bash

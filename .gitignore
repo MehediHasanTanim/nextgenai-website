@@ -3,3 +3,4 @@ tools/node_modules
 tools/.cache
 dist
 nextgenai-site.zip
+.wrangler
